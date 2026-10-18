@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daksh The Fateh Retreat · Menu</title>
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--ink:#1c1f2e;--mute:#6f7485;--g:#cc0000;--a:#cc0000;--line:#e6e8ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 Poppins,Inter,system-ui,sans-serif;padding-bottom:90px}
+.top{position:sticky;top:0;z-index:7;background:#fff;display:flex;align-items:center;gap:10px;padding:10px 14px;box-shadow:0 1px 4px #0001;height:55px}
+.top h1{flex:1;margin:0;font-size:16px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lg{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:none}
+#sb{background:none;border:0;font-size:18px;cursor:pointer}
+.tax{background:#fdecec;color:#b00000;font-size:11px;text-align:right;padding:5px 14px}
+.wrap{max-width:720px;margin:0 auto;padding:0 12px}
+.bar{position:sticky;top:55px;z-index:6;background:var(--bg);margin:0 -12px;padding:10px 12px 6px}
+input,textarea{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:15px}
+#s{margin-bottom:8px}
+.row{display:flex;justify-content:flex-end;margin-bottom:6px}.pv{color:#2e9e57;font-size:11px;font-weight:600;display:flex;gap:5px;align-items:center}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.chips button{flex:none;border:1px solid var(--line);background:#fff;color:#2b2f45;padding:7px 14px;border-radius:99px;font-size:11px;font-weight:600;text-transform:uppercase;cursor:pointer}
+.chips button.on{background:var(--g);color:#fff;border-color:var(--g)}
+h2{font-size:15px;font-weight:700;margin:18px 0 10px}
+.gr{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}@media(min-width:600px){.gr{grid-template-columns:repeat(3,1fr)}}
+.cd{background:#fff;border-radius:8px;box-shadow:0 1px 5px #0000001a;overflow:hidden;display:flex;flex-direction:column}
+.im{aspect-ratio:1/.95;background:#eef0f4;overflow:hidden}.im img{width:100%;height:100%;object-fit:cover;display:block}
+.im.ph{display:flex;align-items:center;justify-content:center}.im.ph::after{content:"🍽";font-size:30px;opacity:.35}
+.bd{padding:9px 10px 10px;display:flex;flex-direction:column;gap:5px;flex:1}
+.nm{font-size:12px;font-weight:600;display:flex;gap:6px;align-items:flex-start}
+.vg{flex:none;width:13px;height:13px;border:1.5px solid #2e9e57;border-radius:3px;position:relative;margin-top:1px}.vg::after{content:"";position:absolute;inset:2px;background:#2e9e57;border-radius:50%}
+.pt{align-self:flex-start;background:#eef0f4;color:var(--mute);font-size:9px;padding:1px 6px;border-radius:4px}
+.ft{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:2px}
+.pr{font-weight:700;font-size:13px}small{color:var(--mute)}.ft small{color:#b00000;font-size:10px}
+.cd.off img,.cd.off .nm,.cd.off .pr{opacity:.5}.cd.off img{filter:grayscale(1)}
+.q{display:flex;align-items:center;gap:6px}.q span{min-width:16px;text-align:center;font-size:13px}
+.q button,.add{border:1px solid var(--g);background:#fff;color:var(--g);border-radius:6px;min-width:28px;height:28px;font-size:14px;cursor:pointer;padding:0 10px}.add{font-size:12px;font-weight:600}
+.it{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.it small{display:block}
+.nf{text-align:center;color:var(--mute);padding:30px 0}
+.sb{position:fixed;left:0;top:38%;z-index:8;background:var(--g);border-radius:0 8px 8px 0;display:flex;flex-direction:column;padding:6px 0}
+.sb a{color:#fff;text-decoration:none;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.rv{margin:34px 0;padding:20px;border-radius:12px;background:#fff;box-shadow:0 1px 5px #0000001a;text-align:center}
+.rv h3{margin:0 0 4px;font-size:17px}.rv p{margin:0 0 12px;color:var(--mute);font-size:13px}.rv input,.rv textarea{margin-bottom:10px}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:11px 18px;border-radius:8px;font-weight:600;text-decoration:none;border:0;font-size:15px;cursor:pointer}.rv .btn{width:100%}.rv .btn.g{background:#2e9e57;margin-top:10px}
+.st{display:flex;justify-content:center;gap:4px;margin-bottom:14px}.st button{background:none;border:0;font-size:34px;line-height:1;color:var(--line);cursor:pointer;padding:2px 4px}.st button.on{color:#f5a623}
+footer{text-align:center;color:var(--mute);font-size:12px;padding:10px 0 20px}footer a{color:var(--g)}.nx{height:26px;vertical-align:middle;margin-right:6px}
+#cb{position:fixed;left:0;right:0;bottom:0;background:var(--g);color:#fff;padding:14px 20px;display:none;justify-content:space-between;align-items:center;cursor:pointer;z-index:8}
+#sh{position:fixed;inset:0;background:#0008;display:none;align-items:flex-end;z-index:9}
+#sh .p{background:#fff;width:100%;max-width:720px;margin:0 auto;border-radius:18px 18px 0 0;padding:20px;max-height:85vh;overflow:auto}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:18px;padding:14px 0}
+.sn{margin-top:14px}.sn label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}textarea{min-height:72px;resize:vertical}
+.note{font-size:13px;color:var(--mute);margin-top:10px}
+</style></head><body>
+<div class="top"><h1>Daksh The Fateh Retreat</h1><button id="sb" aria-label="Search">🔍</button></div><div class="tax">Taxes as applicable extra</div>
+<div class="wrap">
+<div class="bar"><input id="s" placeholder="Search the menu" type="search" hidden><div class="row"><span class="pv"><i class="vg"></i>PURE VEG</span></div><div class="chips" id="ch"></div></div>
+<div id="m"></div><div class="nf" id="nf" hidden>Nothing matches that search. Try another word.</div>
+<div class="rv" style="text-align:left"><h3>Resto information</h3><p>Rani Rd, nr. Fateh Sagar Lake, Malla Talai, Udaipur 313004<br>Dine-In · Open 24 hours · <a href="tel:9925152953" style="color:var(--g)">9925152953</a></p><b style="font-size:13px">Terms &amp; Conditions</b><ol style="font-size:13px;color:var(--mute);padding-left:18px;margin:6px 0 0"><li>Kindly allow us minimum 30 minutes to serve the order.</li><li>Kindly inform in advance for your food preferences or if allergic to any ingredient.</li><li>Food and drinks from outside are strictly not permitted.</li><li>Baby food available on request.</li><li>We do not serve cutlery &amp; crockery without any food order.</li></ol></div>
+<div class="rv"><h3>How was your experience?</h3><p>Tell us how we did. It takes a few seconds.</p>
+<div class="st" id="st" role="radiogroup" aria-label="Rating"></div>
+<input id="rn" placeholder="Your name (optional)" maxlength="60"><textarea id="rt" maxlength="500" placeholder="What did you like, or what can we improve?"></textarea>
+<button class="btn" id="rs" type="button">Send feedback</button><div class="note" id="rm" aria-live="polite"></div></div>
+<footer><img class="nx" src="nexasphere-logo.png" alt="Nexa Sphere" onerror="this.remove()"> Menu made by <a href="https://nexasphere-digital-craft.lovable.app/" target="_blank" rel="noopener">Nexa Sphere</a><br>Item images are only for representation. Actual product may vary.</footer>
+</div>
+<nav class="sb"><a href="https://wa.me/919925152953" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a><a href="tel:9925152953" aria-label="Call">📞</a></nav>
+<div id="cb"><span id="cn"></span><b>View order</b></div>
+<div id="sh"><div class="p"><h2 style="margin-top:0">Your order</h2><div id="ol"></div><div class="sn"><label for="sn">Special note (optional)</label><textarea id="sn" maxlength="300" placeholder="Less spicy, no onion or garlic, Jain, room number, table number…"></textarea></div><div class="tot"><span>Total</span><span id="tt"></span></div><a class="btn" id="wa" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a><div class="note">Opens WhatsApp with your order ready to send. Taxes extra. Tap outside to close.</div></div></div>
+<script>
+// Format: Name|portion|price|x (x = currently unavailable)
+const D={
+"Our Speciality Page":`Pani Puri Shot|8 pcs|275|it_2007_1_6a26662ad6fba.webp
+Frozen Belpatra And Cucumber Lemonade||325
+Jade Soup||350
+Broccoli And Peas Burger Soup||350
+Udaipuri Starter Platter||899
+Oriental Sizzler Platter||899
+Tandoori Ananas||573
+Soya Pudina Malai Tikka||475
+Palak Pakodi Chaat||425
+Khumb Ki Galuti||590
+Chena Imli Pyaz Ki Tikki||575
+Neemach Ka Paneer Tikka||575
+Oriental Gold Coins With Sweet Chilli Sauce||525
+Spanish And Corn Spring Roll With Chilli Mayonnaise||500
+Lotus Stem Honey Chili||575
+Khooba||675
+Daal Bati Choorma Kadhi||675
+Desi Chakki Ki Sabji||575
+Sangeetas Bhimshahi Kandhari Kofte||575
+Bhatti Ka Paneer Masala||575
+Khumbh Malai Adraki||550
+Bhindi Palak Bhujiya||475
+Aloo Chutney Ki Biryani With Raita||500
+Chukunder Cheese Masala Naan||215
+A Lebanese Platter||899|it_2007_25_6a26663c894a2.webp
+Cottage Cheese And Spinach Lasagne Rolls||690|it_2007_26_6a26664f00c54.webp
+Quesadilla With Our Home Made Filling And Dips||650|it_2007_27_6a26665db6a0b.webp
+Mexican Beans And Rice Bowl With Cheese And Nocha||600|it_2007_28_6a26666a1320e.webp
+Balsamic Tomato And Cheese Margherita Pizza||550|it_2007_29_6a2666742428c.webp
+Caramel Mushroom Duxelle En Croute||550|it_2007_30_6a266680000b9.webp
+Shahi Tamatar Ka Halwa||325
+Rose Petal Ice Cream||220`,
+"Mocktail Blends":`Virgin Mojito||290
+Paani Puri Shots||275|it_2007_34_6a266688ead5d.webp
+Pineapple Colada||290
+Sitafal Mojito||290
+Dark Passion||290
+Frozen Belpatra And Cucumber Lemonade||325
+Strawberry Lemon Daiquiri||290
+Shahi Gulab Velvet||290
+Mojito Blu||290`,
+"Soda Sparkles":`Watermelon||315
+Strawberry||315
+Green Apple||315
+Fresh Lime||225
+Preserved Juices||250
+Aerated Beverages|300ml|100
+Drinking Bottled Water||40
+Mountain Mineral Water Vedica||60`,
+"Milk Based Liquid":`Chocolate Frappe||290
+Cold Coffee With Ice Cream||300
+Milk Shakes||290
+Thick Lassi||225
+Butter Milk||150
+Coffee||70
+Tea||50`,
+"Naye Soup Ki Shurwat":`Jade Soup||350|it_2007_57_6a25472ccd26e.webp
+Creamy Mushroom And Garlic Soup With Garlic Bread||325
+Rambo Bean Soup With Crispy Tortillas||300
+Vegetable Talumein Soup||300
+Broccoli And Peas Burger Soup||350|it_2007_61_6a25470cd51c0.webp
+Roast Tomato And Basil Soup||315
+Hot And Sour Soup||300
+Sweet Corn And Coriander Soup||300`,
+"Indian Starters":`Udaipuri Starter Platter||899|it_2007_65_6a254759db5ad.webp
+Paneer Ka Soola||525
+Tandoori Ananas Duet Of Red And Creamy Marination||575
+Soya Pudina Malai Tikka||475|it_2007_68_6a25474b12f45.webp
+Soya Lal Mirch Tikka||475
+Khumb Ki Galuti||590|it_2007_70_6a254739a6939.webp
+Chena Imli Pyaz Ki Tikki||515|it_2007_71_6a2547252ced6.webp`,
+"Old Is Gold (Delicacies Which You All Love From All These Years)":`Neemach Ka Paneer Tikka||575|it_2007_72_6a254766dcdbb.webp
+Kesari Malai Paneer Tikka||550
+Hara Udaipuri Kabab||450
+Arvi Ke Kabab||425
+Palak Pakori Chaat||425`,
+"Laapi Chokha":`Khooba||675|it_2007_77_6a266e1fbc2d1.webp
+Daal Bati Choorma Kadhi||675|it_2007_78_6a266e2b2bfec.webp
+Desi Chakki Ki Sabji||575|it_2007_79_6a266e3591225.webp
+Papad Methi Mangodi Ki Subzi||425
+Palak Khada Masala||425
+Jodhpuri Malai Pyaaz||500
+Gatte Ka Saag||425
+Sev Tamatar||400
+Kadhi Pakoda||400`,
+"Indian Mains":`Sangeetas Bhimshahi Kandhari Kofte||575|it_2007_86_6a26901bd7c2b.webp
+Malai Kaju Curry||550
+Kesari Malai Kofte||550
+Bhatti Ka Paneer Masala||575|it_2007_89_6a266e44e14bd.webp
+Cheese Paneer Butter Masala||550
+Makkhan Wala Paneer||525
+Palak Paneer||500
+Matar Paneer Adraki||490
+Kadhai Mushroom Tikka||575
+Khumbh Malai Adraki||550|it_2007_95_6a266e5077060.webp
+Palak Makai Cheese Ki Bhaji||525
+Methi Malai Mutter||525
+Gobhi Methi Ki Bhaji||490
+Vilayati Subz Jhalfrezi||475
+Corn Capsicum Masala||475
+Kadhai Soya Chaap||500
+Bhindi Mewa Palak Bhujiya||475
+Udaipuri Ke Bharwan Aloo||475
+Kabooli Masaledaar Chole||450
+Aloo Tamatar Ka Jhol||425`,
+"Daal":`Makhani Daal||390
+Udaipuri Daal Tadka||375
+Yellow Tadka Daal||350
+Palak Wali Daal||350`,
+"Basmati Rice":`Aloo Chutney Ki Biryani With Raita||500|it_2007_110_6a266e5c83bf8.webp
+Chutney Khumb Ki Biryani With Raita||500
+Dum Ki Subz Biryani With Raita||500
+Gatte Ka Pulao||450
+Subz Pulao||450
+Green Peas Pulao||425
+Jeera Pulao||400
+Steamed Rice||390`,
+"Accompaniments":`Garden Fresh Green Salad||200
+Raita||250|Raita
+Kheecha Masala Papad With Cheese|1 pc|150
+Masala Papad|2 pcs|125
+Roasted Papad|2 pcs|100
+Butter Milk||150|it_2007_123_6a2547fc023d3.webp
+Thick Lassi||225|it_2007_124_6a25480540c3a.webp
+Spinach And Garlic Noodles||425
+Chili Garlic Noodles||425
+Hakka Style Noodles||425
+Peking Noodle Fried Rice||450
+Chili Basil Fried Rice||425
+Vegetable Fried Rice||400
+Steamed Rice||390|it_2007_155_6a2547c9b9f7b.webp`,
+"Indian Breads":`Assorted Bread Ki Tokri||350
+Pyaaz Mirchi Ki Roti||150
+Garlic Cheese Naan||170
+Garlic Naan Cheese Naan||150
+Chukunder Cheese Masala Naan||215
+Plain Naan Or Butter Naan||120
+Stuffed Paratha||120
+Stuffed Kulcha||150
+Laccha Paratha||95
+Missi Roti||95
+Tandoori Roti Plain Or Butter||50
+Tawa Roti||35`,
+"Oriental Starters":`Oriental Sizzler Platter||899|it_2007_137_6a254843efffe.webp
+Crunchy Corn Salt And Pepper||515
+Oriental Gold Coins With Sweet Chilli Sauce||525|it_2007_139_6a25483a77985.webp
+Spinach And Corn Spring Rolls With Chili Mayonnaise||500
+Vegetable Spring Rolls||450
+Hunan Style Crispy Vegetables||490
+Sichuan Style Cottage Cheese||550
+Lotus Stem Honey Chili||575`,
+"Oriental Mains":`Thai Red / Green Vegetable Curry With Steamed Rice||675|Thai Red - Green Vegetable Curry With Steamed Rice.png
+Sichuan Chili Vegetable And Cashew Nuts With Steamed Rice||650
+Asian Greens With Ginger Soya Sauce||575
+Asian Style Manchurian||550`,
+"Mediterranean":`A Lebanese Platter||899|it_2007_156_6a2666cd7a807.webp
+Caesar Salad With Greens Avocado And Parmesan||650
+Cottage Cheese And Spinach Lasagne Rolls||690|it_2007_158_6a2666d7def3a.webp
+Pasta With Creamy Pesto||650
+Penne Pasta With Tomato And Basil||650
+Mexican Beans And Rice Bowl With Cheese And Nocha||600|it_2007_161_6a2666e60bfaa.webp
+Loaded Nachos With Cheese And Salsa||625
+Quesadilla With Our Home Made Filling And Dips||650|it_2007_163_6a2666efdcbd3.webp`,
+"Thin Crust Pizza":`Mexican Bell Pepper Zucchini Cherry Tomato Pizza||550
+Corn Barbequed Pineapple Jalapeno Pizza||600
+Balsamic Tomato And Cheese Margherita Pizza||550|it_2007_166_6a2666f90fddf.webp
+Tomato Balsamic Bruschetta||525
+Caramel Mushroom Duxelle En Croute||550|it_2007_168_6a26671108890.webp
+Garlic Bread|3 pcs|275
+Garlic Bread With Cheese|3 pcs|315
+French Fries With Cocktail Sauce||290`,
+"Dessert":`Chocolate Brownie With Vanilla Ice Cream||300
+Chocolate Spring Roll With Ice Cream||300
+Shahi Tamatar Ka Halwa||325
+Gulab Patti Choorma|2 pcs|180
+Makki Tukda|4 pcs|230
+Jodhpuri Gulab Jamun|2 pcs|180
+Jodhpuri Gulab Jamun With Ice Cream|2 pcs|250
+Vanilla Ice Cream|2 scoops|180
+Rose Petal Ice Cream|2 scoops|220`};
+const B="https://assets.eresto.in/public/treasure/2007/archive/item_images/";
+const IMG=(n,f)=>{f=f||n+".png";let s=f.toLowerCase().replace(/[^a-z0-9.]+/g,"_");if(!s.includes("."))s+=".png";return["fateh-images/"+s,B+encodeURIComponent(f)]};
+function imgErr(i){if(i.dataset.r){i.src=i.dataset.r;delete i.dataset.r}else{i.parentNode.classList.add("ph");i.remove()}}
+const WA="919925152953",cart={},items={};let cat="All";
+const $=id=>document.getElementById(id),inr=n=>"₹"+n.toLocaleString("en-IN");
+const esc=t=>t.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+Object.keys(D).forEach((c,ci)=>D[c]=D[c].split("\n").map((l,i)=>{const[n,p,pr,f]=l.split("|");const g=IMG(n,f);const o={id:ci+"_"+i,n,p,pr:+pr,off:false,img:g[0],rem:g[1]};items[o.id]=o;return o}));
+function render(){
+ const q=$("s").value.trim().toLowerCase();let h="",any=0;
+ for(const c in D){if(cat!="All"&&cat!=c)continue;
+  const L=D[c].filter(o=>!q||o.n.toLowerCase().includes(q)||c.toLowerCase().includes(q));if(!L.length)continue;any=1;
+  h+=`<h2>${esc(c)}</h2><div class="gr">`+L.map(o=>`<div class="cd${o.off?" off":""}"><div class="im"><img loading="lazy" src="${o.img}" data-r="${o.rem}" alt="" onerror="imgErr(this)"></div><div class="bd"><div class="nm"><i class="vg"></i><span>${esc(o.n)}</span></div>${o.p?`<span class="pt">${esc(o.p)}</span>`:""}<div class="ft"><span class="pr">${inr(o.pr)}</span>${o.off?`<small>Not available</small>`:cart[o.id]?`<div class="q"><button onclick="ch('${o.id}',-1)">−</button><span>${cart[o.id]}</span><button onclick="ch('${o.id}',1)">+</button></div>`:`<button class="add" onclick="ch('${o.id}',1)">Add</button>`}</div></div></div>`).join("")+`</div>`}
+ $("m").innerHTML=h;$("nf").hidden=!!any}
+$("sb").onclick=()=>{const s=$("s");s.hidden=!s.hidden;if(s.hidden){s.value="";render()}else s.focus()};
+function chips(){$("ch").innerHTML=["All",...Object.keys(D)].map(c=>`<button class="${c==cat?"on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("")}
+$("ch").onclick=e=>{if(e.target.dataset.c){cat=e.target.dataset.c;chips();render();scrollTo(0,0)}};
+$("s").oninput=render;
+function ch(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];render();bar()}
+function bar(){let n=0,t=0;for(const id in cart){n+=cart[id];t+=cart[id]*items[id].pr}
+ $("cb").style.display=n?"flex":"none";$("cn").textContent=n+(n>1?" items · ":" item · ")+inr(t);
+ $("ol").innerHTML=Object.keys(cart).map(id=>`<div class="it"><div><b>${esc(items[id].n)}</b><small>${inr(items[id].pr)} each</small></div><div class="q"><button onclick="ch('${id}',-1)">−</button><span>${cart[id]}</span><button onclick="ch('${id}',1)">+</button></div></div>`).join("");
+ $("tt").textContent=inr(t);
+ const msg="Hello Daksh The Fateh Retreat, I'd like to order:\n"+Object.keys(cart).map(id=>`${cart[id]} x ${items[id].n} - ${inr(cart[id]*items[id].pr)}`).join("\n")+`\nTotal: ${inr(t)} (taxes extra)`+($("sn").value.trim()?"\nSpecial note: "+$("sn").value.trim():"");
+ $("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);if(!n)$("sh").style.display="none"}
+$("sn").oninput=bar;
+$("cb").onclick=()=>$("sh").style.display="flex";
+$("sh").onclick=e=>{if(e.target.id=="sh")$("sh").style.display="none"};
+let rate=0;const GR="https://g.co/kgs/e4c2mEu";
+function stars(){$("st").innerHTML=[1,2,3,4,5].map(i=>`<button type="button" role="radio" aria-checked="${i==rate}" aria-label="${i} star${i>1?"s":""}" class="${i<=rate?"on":""}" data-r="${i}">★</button>`).join("")}
+$("st").onclick=e=>{if(e.target.dataset.r){rate=+e.target.dataset.r;stars()}};
+$("rs").onclick=()=>{
+ if(!rate){$("rm").textContent="Please tap a star rating first.";return}
+ const nm=$("rn").value.trim(),tx=$("rt").value.trim();
+ const msg="Feedback for Daksh The Fateh Retreat\nRating: "+rate+"/5"+(nm?"\nName: "+nm:"")+(tx?"\nComment: "+tx:"");
+ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank");
+ $("rm").innerHTML="Thank you for your feedback."};
+stars();chips();render();
+</script></body></html>
